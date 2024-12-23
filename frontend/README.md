@@ -1,70 +1,85 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This is a Task Manager web application where users can:
 
-In the project directory, you can run:
+- Log in using a username and password (JWT authentication).
+- Add new tasks.
+- View tasks in a list.
+- Edit and delete tasks.
 
-### `npm start`
+The backend is built with Express.js, MongoDB, and JWT authentication. The frontend is built with React.js, and it communicates with the backend through HTTP requests.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+- **Frontend**: React.js, Axios (for HTTP requests), CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, Mongoose
+- **Authentication**: JWT (JSON Web Token)
+- **Other Dependencies**:
+  - `body-parser`: Middleware to parse incoming request bodies.
+  - `cors`: Middleware to enable cross-origin requests.
+  - `express`: Web framework for Node.js to handle HTTP requests.
+  - `jsonwebtoken`: Library for creating and verifying JWTs.
+  - `mongodb` and `mongoose`: MongoDB database and Mongoose ORM for MongoDB.
+ ## Running the Application Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run both the frontend and backend locally, follow these steps:
 
-### `npm run build`
+### 1. **Run the Backend (Server)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Navigate to the `backend` directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   cd backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install backend dependencies:
+ 
+   npm install
 
-### `npm run eject`
+3. Start the backend server:
+   node server.js
+    backend will run on http://localhost:5000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. **Run the Frontend (React)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Navigate to the client directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   cd client
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install frontend dependencies:
 
-## Learn More
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the React development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   npm start
 
-### Code Splitting
+The frontend will run on http://localhost:3000.
+3. Accessing the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The frontend will be accessible at http://localhost:3000.
+The backend will be accessible at http://localhost:5000.
 
-### Analyzing the Bundle Size
+4. Login Credentials
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. To log in to the application, use the following credentials:
 
-### Making a Progressive Web App
+Username: admin@123
+Password: test123
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Once logged in, you can manage your tasks (view, add, edit, delete).
 
-### Advanced Configuration
+### Summary of Commands to Run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Backend**:
+   - `cd server` (navigate to the backend folder)
+   - `npm install` (install backend dependencies)
+   - `node server.js` (start the backend)
 
-### Deployment
+2. **Frontend**:
+   - `cd client` (navigate to the frontend folder)
+   - `npm install` (install frontend dependencies)
+   - `npm start` (start the frontend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
